@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title data-static-meta>Your Name | Your Headline Here</title>
+    <meta data-static-meta name="description" content="Your professional portfolio - tell me what to put here." />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preload" href="/fonts/geist-var.woff2" as="font" type="font/woff2" crossorigin />
+    <meta name="theme-color" content="#0A0A0A" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Your Name" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:title" content="Your Name | Your Headline Here" />
+    <meta property="og:description" content="Your professional portfolio" />
+    <script>
+      try {
+        if (localStorage.getItem('pv2-theme') === 'light') {
+          document.documentElement.dataset.theme = 'light'
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F0F8FF')
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
